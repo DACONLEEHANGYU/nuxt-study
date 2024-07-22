@@ -48,5 +48,12 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+
+  // server setup
+  server:{
+    port:1932,
+  },
+
+
 }
