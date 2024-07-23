@@ -1,16 +1,25 @@
 <template>
   <div>
-    <ul>
-      <li>상품 1</li>
-      <li>상품 2</li>
-      <li>상품 3</li>
-    </ul>
+	  <h1 v-bind:class="className" v-html="messages"></h1>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+
+  data(){
+    return{
+      "messages" : "<h1 v-bind:class='className'>Hi! Vue</h1>",
+      "className" : "className",
+    }
+  }
+
+}
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.className {
+  color: red;
+}
+</style>
 
